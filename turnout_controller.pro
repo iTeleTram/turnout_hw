@@ -1,4 +1,4 @@
-update=09/12/2017 9:05:20 PM
+update=2018-01-11 9:06:37 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -72,5 +72,5 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
-LibName34=E:/projects/iteletram/libs/kicad/teletram
-LibName35=E:/projects/iteletram/libs/kicad/tt-power
+LibName34=C:/projects/iTeletram/libs/trunk/kicad/teletram
+LibName35=C:/projects/iTeletram/libs/trunk/kicad/tt-power
