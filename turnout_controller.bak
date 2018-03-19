@@ -846,7 +846,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 4000 8450 4000
 Text Notes 7100 3600 0    60   ~ 0
-Optional on-board LEDs
+Optional On-Board LEDs
 Text Label 9400 2000 0    60   ~ 0
 LED1
 Text Label 9400 2100 0    60   ~ 0
