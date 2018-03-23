@@ -191,11 +191,11 @@ F 4 "Volt" H 8800 2700 40  0001 L BNN "Voltage"
 	1    8700 2750
 	1    0    0    -1  
 $EndComp
-Text Notes 10000 1450 0    60   ~ 0
+Text Notes 9950 1000 0    60   ~ 0
 MOTOR_CNTL
-Text Notes 10000 1550 0    60   ~ 0
+Text Notes 9950 1100 0    60   ~ 0
 5V SUPPLY
-Text Notes 10000 1650 0    60   ~ 0
+Text Notes 9950 1200 0    60   ~ 0
 GND
 $Comp
 L 5V #PWR01
@@ -240,39 +240,6 @@ F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 7350 2600 60  0001 C CNN
 F 3 "" H 7350 2600 60  0001 C CNN
 F 4 "MKE04P24M48SF0" H 7350 2600 60  0001 C CNN "MFG P/N"
 	1    7350 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J1
-U 1 1 5A12567A
-P 950 1550
-F 0 "J1" H 950 1350 50  0000 C CNN
-F 1 "DCC Input" H 950 1650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch1.27mm" H 950 1550 50  0001 C CNN
-F 3 "" H 950 1550 50  0001 C CNN
-	1    950  1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Conn_01x02 J4
-U 1 1 5A1257C6
-P 9800 2000
-F 0 "J4" H 9800 2100 50  0000 C CNN
-F 1 "LED Connect" H 9800 1800 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch1.27mm" H 9800 2000 50  0001 C CNN
-F 3 "" H 9800 2000 50  0001 C CNN
-	1    9800 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x03 J3
-U 1 1 5A125843
-P 9800 1550
-F 0 "J3" H 9800 1750 50  0000 C CNN
-F 1 "Servo Motor" H 9800 1350 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch1.27mm" H 9800 1550 50  0001 C CNN
-F 3 "" H 9800 1550 50  0001 C CNN
-	1    9800 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -345,10 +312,6 @@ F 3 "" H 800 4600 60  0000 C CNN
 	1    800  4600
 	1    0    0    -1  
 $EndComp
-Text Notes 10000 2000 0    60   ~ 0
-LED_1
-Text Notes 10000 2100 0    60   ~ 0
-LED_2
 $Comp
 L 5V #PWR05
 U 1 1 5A143044
@@ -595,6 +558,134 @@ SWD_CLK
 NoConn ~ 6750 1900
 Text Label 6200 1800 0    60   ~ 0
 SWD_IO
+Text Label 7650 5400 0    60   ~ 0
+SWD_IO
+Text Label 7550 5300 0    60   ~ 0
+SWD_CLK
+$Comp
+L Conn_01x04 J3
+U 1 1 5A77F62D
+P 7250 5400
+F 0 "J3" H 7250 5600 50  0000 C CNN
+F 1 "PROG" H 7250 5100 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x04_Pitch1.27mm_at_edge" H 7250 5400 50  0001 C CNN
+F 3 "" H 7250 5400 50  0001 C CNN
+	1    7250 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND_ #PWR021
+U 1 1 5A77F939
+P 7650 5700
+F 0 "#PWR021" H 7750 5800 30  0001 C CNN
+F 1 "GND_" H 7650 5600 30  0001 C CNN
+F 2 "" H 7650 5700 60  0000 C CNN
+F 3 "" H 7650 5700 60  0000 C CNN
+	1    7650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5V #PWR022
+U 1 1 5A77FAA2
+P 7650 5000
+F 0 "#PWR022" H 7650 5100 40  0001 C CNN
+F 1 "5V" H 7650 5105 60  0000 C CNN
+F 2 "" H 7650 5000 60  0000 C CNN
+F 3 "" H 7650 5000 60  0000 C CNN
+	1    7650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 5AA49FFB
+P 7800 4200
+F 0 "D4" H 7800 4300 50  0000 C CNN
+F 1 "LED" H 7800 4100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7800 4200 50  0001 C CNN
+F 3 "" H 7800 4200 50  0001 C CNN
+	1    7800 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D3
+U 1 1 5AA4A06E
+P 7800 3800
+F 0 "D3" H 7800 3900 50  0000 C CNN
+F 1 "LED" H 7800 3700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7800 3800 50  0001 C CNN
+F 3 "" H 7800 3800 50  0001 C CNN
+	1    7800 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 7100 3600 0    60   ~ 0
+Optional On-Board LEDs
+Text Label 9050 2000 0    60   ~ 0
+LED1
+Text Label 9050 2100 0    60   ~ 0
+LED2
+Text Label 7100 4000 0    60   ~ 0
+LED1
+Text Label 8250 4000 0    60   ~ 0
+LED2
+Text Notes 9200 3600 0    60   ~ 0
+Push Buttons
+Text Notes 7100 4750 0    60   ~ 0
+Programming Header
+$Comp
+L Conn_01x01 J4
+U 1 1 5AB2F44B
+P 9800 1450
+F 0 "J4" H 9900 1500 50  0000 C CNN
+F 1 "MOT_CNTL" H 10150 1450 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1450 50  0001 C CNN
+F 3 "" H 9800 1450 50  0001 C CNN
+	1    9800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5AB2F4C5
+P 9800 1550
+F 0 "J5" H 9900 1600 50  0000 C CNN
+F 1 "MOT_POWER" H 10200 1550 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1550 50  0001 C CNN
+F 3 "" H 9800 1550 50  0001 C CNN
+	1    9800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5AB2F530
+P 9800 1650
+F 0 "J6" H 9900 1700 50  0000 C CNN
+F 1 "MOT_GND" H 10150 1650 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1650 50  0001 C CNN
+F 3 "" H 9800 1650 50  0001 C CNN
+	1    9800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5AB2F944
+P 9800 2000
+F 0 "J7" H 9800 2100 50  0000 C CNN
+F 1 "LED_1" H 10000 2000 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 2000 50  0001 C CNN
+F 3 "" H 9800 2000 50  0001 C CNN
+	1    9800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J8
+U 1 1 5AB2FA1F
+P 9800 2100
+F 0 "J8" H 9800 2000 50  0000 C CNN
+F 1 "LED_2" H 10000 2100 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 2100 50  0001 C CNN
+F 3 "" H 9800 2100 50  0001 C CNN
+	1    9800 2100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	7950 2450 8050 2450
 Wire Wire Line
@@ -666,9 +757,9 @@ Wire Wire Line
 Wire Wire Line
 	2950 2050 2100 2050
 Wire Wire Line
-	1150 1550 1550 1550
+	1100 1550 1550 1550
 Wire Wire Line
-	1150 1450 1550 1450
+	1100 1450 1550 1450
 Wire Wire Line
 	2100 1250 2950 1250
 Wire Wire Line
@@ -756,21 +847,6 @@ Wire Wire Line
 	7450 5300 7950 5300
 Wire Wire Line
 	7450 5400 7950 5400
-Text Label 7650 5400 0    60   ~ 0
-SWD_IO
-Text Label 7550 5300 0    60   ~ 0
-SWD_CLK
-$Comp
-L Conn_01x04 J2
-U 1 1 5A77F62D
-P 7250 5400
-F 0 "J2" H 7250 5600 50  0000 C CNN
-F 1 "Conn_01x04" H 7250 5100 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch1.27mm" H 7250 5400 50  0001 C CNN
-F 3 "" H 7250 5400 50  0001 C CNN
-	1    7250 5400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7450 5200 7650 5200
 Wire Wire Line
@@ -779,50 +855,6 @@ Wire Wire Line
 	7450 5500 7650 5500
 Wire Wire Line
 	7650 5500 7650 5650
-$Comp
-L GND_ #PWR021
-U 1 1 5A77F939
-P 7650 5700
-F 0 "#PWR021" H 7750 5800 30  0001 C CNN
-F 1 "GND_" H 7650 5600 30  0001 C CNN
-F 2 "" H 7650 5700 60  0000 C CNN
-F 3 "" H 7650 5700 60  0000 C CNN
-	1    7650 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L 5V #PWR022
-U 1 1 5A77FAA2
-P 7650 5000
-F 0 "#PWR022" H 7650 5100 40  0001 C CNN
-F 1 "5V" H 7650 5105 60  0000 C CNN
-F 2 "" H 7650 5000 60  0000 C CNN
-F 3 "" H 7650 5000 60  0000 C CNN
-	1    7650 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D3
-U 1 1 5AA49FFB
-P 7800 4200
-F 0 "D3" H 7800 4300 50  0000 C CNN
-F 1 "LED" H 7800 4100 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 7800 4200 50  0001 C CNN
-F 3 "" H 7800 4200 50  0001 C CNN
-	1    7800 4200
-	-1   0    0    1   
-$EndComp
-$Comp
-L LED D4
-U 1 1 5AA4A06E
-P 7800 3800
-F 0 "D4" H 7800 3900 50  0000 C CNN
-F 1 "LED" H 7800 3700 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 7800 3800 50  0001 C CNN
-F 3 "" H 7800 3800 50  0001 C CNN
-	1    7800 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7550 4200 7650 4200
 Wire Wire Line
@@ -843,18 +875,28 @@ Wire Wire Line
 	7100 4000 7550 4000
 Wire Wire Line
 	8050 4000 8450 4000
-Text Notes 7100 3600 0    60   ~ 0
-Optional On-Board LEDs
-Text Label 9400 2000 0    60   ~ 0
-LED1
-Text Label 9400 2100 0    60   ~ 0
-LED2
-Text Label 7100 4000 0    60   ~ 0
-LED1
-Text Label 8250 4000 0    60   ~ 0
-LED2
-Text Notes 9200 3600 0    60   ~ 0
-Push Buttons
-Text Notes 7100 4750 0    60   ~ 0
-Programming Header
+$Comp
+L Conn_01x01 J1
+U 1 1 5AB47DEA
+P 900 1450
+F 0 "J1" H 900 1350 50  0000 C CNN
+F 1 "DCC_A" H 1150 1450 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0001 C CNN
+	1    900  1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 5AB4815D
+P 900 1550
+F 0 "J2" H 900 1650 50  0000 C CNN
+F 1 "DCC_B" H 1150 1550 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 900 1550 50  0001 C CNN
+F 3 "" H 900 1550 50  0001 C CNN
+	1    900  1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 2000 9450 2000
 $EndSCHEMATC
