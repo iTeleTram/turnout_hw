@@ -2,4 +2,5 @@
   (lib (name tt_buttons)(type KiCad)(uri "$(KIPRJMOD)/tt_buttons.pretty")(options "")(descr ""))
   (lib (name Z4GP208-HF)(type KiCad)(uri "$(KIPRJMOD)/Z4GP208-HF.pretty")(options "")(descr ""))
   (lib (name half-connectors)(type KiCad)(uri "$(KIPRJMOD)/half-connectors.pretty")(options "")(descr ""))
+  (lib (name tt_mounting)(type KiCad)(uri "$(KIPRJMOD)/tt_mounting.pretty")(options "")(descr ""))
 )
