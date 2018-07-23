@@ -313,11 +313,9 @@ F 3 "" H 3450 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7950 1600
-NoConn ~ 7950 1700
 NoConn ~ 7950 1800
 NoConn ~ 6750 1600
-NoConn ~ 6750 1700
-Text Label 6200 1400 0    60   ~ 0
+Text Label 8450 3250 0    60   ~ 0
 KEY_UP
 Text Label 6200 1500 0    60   ~ 0
 KEY_DN
@@ -358,7 +356,6 @@ Text Label 850  3150 0    60   ~ 0
 DCC_A
 Text Label 2400 3150 0    60   ~ 0
 DCC_IN
-NoConn ~ 7950 1500
 Text Notes 9450 850  0    60   ~ 0
 R7 calculated for 5mA (Imax/pin)\n5V output, 3.1V drop\n25% Intensity based on HT-191TW\n
 $Comp
@@ -372,7 +369,7 @@ F 3 "" H 3450 2100 50  0001 C CNN
 	1    3450 2100
 	1    0    0    -1  
 $EndComp
-Text Label 6200 1300 0    60   ~ 0
+Text Label 6200 1400 0    60   ~ 0
 SWD_CLK
 NoConn ~ 6750 1900
 Text Label 6200 1800 0    60   ~ 0
@@ -627,15 +624,73 @@ F 4 "NRH3012T4R7MN" V 2850 5100 60  0001 C CNN "MFG P/N"
 	1    2850 5100
 	0    -1   -1   0   
 $EndComp
+$Comp
+L CAP_NP C1
+U 1 1 5B314D35
+P 1100 5550
+F 0 "C1" H 950 5750 50  0000 L BNN
+F 1 "10u" H 900 5500 50  0000 L BNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1175 5450 40  0001 L BNN
+F 3 "" H 1100 5550 60  0000 C CNN
+F 4 "Volt" H 1200 5500 40  0001 L BNN "Voltage"
+	1    1100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND_ #PWR021
+U 1 1 5B315009
+P 1100 5850
+F 0 "#PWR021" H 1200 5950 30  0001 C CNN
+F 1 "GND_" H 1100 5750 30  0001 C CNN
+F 2 "" H 1100 5850 60  0000 C CNN
+F 3 "" H 1100 5850 60  0000 C CNN
+	1    1100 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP_NP C3
+U 1 1 5B317374
+P 3150 5600
+F 0 "C3" H 3200 5800 50  0000 L BNN
+F 1 "22u" H 3200 5550 50  0000 L BNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3225 5500 40  0001 L BNN
+F 3 "" H 3150 5600 60  0000 C CNN
+F 4 "Volt" H 3250 5550 40  0001 L BNN "Voltage"
+	1    3150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND_ #PWR022
+U 1 1 5B31785C
+P 3150 5850
+F 0 "#PWR022" H 3250 5950 30  0001 C CNN
+F 1 "GND_" H 3150 5750 30  0001 C CNN
+F 2 "" H 3150 5850 60  0000 C CNN
+F 3 "" H 3150 5850 60  0000 C CNN
+	1    3150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP_NP C2
+U 1 1 5B3180BB
+P 2250 5000
+F 0 "C2" V 2200 5200 50  0000 L BNN
+F 1 "0.1u" V 2200 4900 50  0000 L BNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2325 4900 40  0001 L BNN
+F 3 "" H 2250 5000 60  0000 C CNN
+F 4 "Volt" H 2350 4950 40  0001 L BNN "Voltage"
+	1    2250 5000
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	7950 2450 8050 2450
 Wire Wire Line
 	7950 2350 8700 2350
 Connection ~ 8350 2350
 Wire Wire Line
-	7950 2000 8550 2000
+	8300 2000 8550 2000
 Wire Wire Line
-	7950 1900 9050 1900
+	8150 1900 9050 1900
 Wire Wire Line
 	8950 2000 9600 2000
 Wire Wire Line
@@ -695,8 +750,6 @@ Wire Wire Line
 	3250 1650 3850 1650
 Connection ~ 8700 2350
 Wire Wire Line
-	6200 1400 6750 1400
-Wire Wire Line
 	10150 4100 10550 4100
 Wire Wire Line
 	10550 3850 10150 3850
@@ -727,11 +780,6 @@ Wire Wire Line
 	9600 1550 9350 1550
 Connection ~ 9350 1550
 Wire Wire Line
-	6600 1300 6600 1400
-Wire Wire Line
-	6200 1300 6600 1300
-Connection ~ 6600 1400
-Wire Wire Line
 	6750 1800 6200 1800
 Wire Wire Line
 	7450 5300 7950 5300
@@ -760,7 +808,7 @@ Wire Wire Line
 Connection ~ 7550 4000
 Connection ~ 8050 4000
 Wire Wire Line
-	7950 2100 9600 2100
+	8250 2100 9600 2100
 Wire Wire Line
 	7100 4000 7550 4000
 Wire Wire Line
@@ -776,29 +824,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 5000 1100 5300
 Connection ~ 1100 5000
-$Comp
-L CAP_NP C1
-U 1 1 5B314D35
-P 1100 5550
-F 0 "C1" H 950 5750 50  0000 L BNN
-F 1 "22u" H 900 5500 50  0000 L BNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1175 5450 40  0001 L BNN
-F 3 "" H 1100 5550 60  0000 C CNN
-F 4 "Volt" H 1200 5500 40  0001 L BNN "Voltage"
-	1    1100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND_ #PWR021
-U 1 1 5B315009
-P 1100 5850
-F 0 "#PWR021" H 1200 5950 30  0001 C CNN
-F 1 "GND_" H 1100 5750 30  0001 C CNN
-F 2 "" H 1100 5850 60  0000 C CNN
-F 3 "" H 1100 5850 60  0000 C CNN
-	1    1100 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 5550 1100 5800
 Wire Wire Line
@@ -813,18 +838,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 5700 2550 5800
 Connection ~ 2550 5200
-$Comp
-L CAP_NP C3
-U 1 1 5B317374
-P 3150 5600
-F 0 "C3" H 3200 5800 50  0000 L BNN
-F 1 "22u" H 3200 5550 50  0000 L BNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3225 5500 40  0001 L BNN
-F 3 "" H 3150 5600 60  0000 C CNN
-F 4 "Volt" H 3250 5550 40  0001 L BNN "Voltage"
-	1    3150 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 5200 3050 5200
 Wire Wire Line
@@ -838,31 +851,8 @@ Wire Wire Line
 Wire Wire Line
 	2850 4900 3150 4900
 Connection ~ 3150 4900
-$Comp
-L GND_ #PWR022
-U 1 1 5B31785C
-P 3150 5850
-F 0 "#PWR022" H 3250 5950 30  0001 C CNN
-F 1 "GND_" H 3150 5750 30  0001 C CNN
-F 2 "" H 3150 5850 60  0000 C CNN
-F 3 "" H 3150 5850 60  0000 C CNN
-	1    3150 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 5800 3150 5600
-$Comp
-L CAP_NP C2
-U 1 1 5B3180BB
-P 2250 5000
-F 0 "C2" V 2200 5200 50  0000 L BNN
-F 1 "0.1u" V 2200 4900 50  0000 L BNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2325 4900 40  0001 L BNN
-F 3 "" H 2250 5000 60  0000 C CNN
-F 4 "Volt" H 2350 4950 40  0001 L BNN "Voltage"
-	1    2250 5000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2500 5000 2600 5000
 Wire Wire Line
@@ -870,4 +860,35 @@ Wire Wire Line
 Connection ~ 2600 5100
 Wire Wire Line
 	2250 5000 2200 5000
+Wire Wire Line
+	6750 1700 6100 1700
+Wire Wire Line
+	6100 1700 6100 1150
+Wire Wire Line
+	6100 1150 8650 1150
+Wire Wire Line
+	8650 1150 8650 1800
+Wire Wire Line
+	8650 1800 8300 1800
+Wire Wire Line
+	8300 1800 8300 2000
+Connection ~ 8300 2000
+Wire Wire Line
+	7950 1700 8150 1700
+Wire Wire Line
+	8150 1700 8150 1900
+Connection ~ 8150 1900
+Wire Wire Line
+	7950 1500 8250 1500
+Wire Wire Line
+	8250 1500 8250 2100
+Connection ~ 8250 2100
+Wire Wire Line
+	6200 1400 6750 1400
+Wire Wire Line
+	7950 2000 8150 2000
+Wire Wire Line
+	8150 2000 8150 3250
+Wire Wire Line
+	8150 3250 8450 3250
 $EndSCHEMATC
