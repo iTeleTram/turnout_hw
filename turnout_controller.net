@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/elhawaryk/projects/iteletram/turnout_hw/turnout_controller.sch)
-    (date "Monday, August 06, 2018 'pmt' 03:24:52 pm")
+    (date "Friday, August 17, 2018 'amt' 01:27:32 am")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -19,7 +19,8 @@
       (value 10u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") GRT188R61C106ME13D)
+        (field (name Voltage) 16))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 59FCCFEE))
@@ -35,7 +36,8 @@
       (value 1u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") 885012106010)
+        (field (name Voltage) 10))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 59FFDD6D))
@@ -43,7 +45,8 @@
       (value 0.1u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") VJ0603V104ZXQPW1BC)
+        (field (name Voltage) 10))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 59FFDDB1))
@@ -68,13 +71,15 @@
       (value D_Schottky)
       (footprint Diodes_SMD:D_SOD-523)
       (fields
-        (field (name "MFG P/N") SD1206S020S1R0))
+        (field (name "MFG P/N") PMEG2010AEB,115))
       (libsource (lib device) (part D_Schottky))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A133850))
     (comp (ref R2)
       (value 4.7K)
       (footprint Resistors_SMD:R_0603_HandSoldering)
+      (fields
+        (field (name "MFG P/N") TBD))
       (libsource (lib turnout_controller-cache) (part RES))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A1338DD))
@@ -97,7 +102,8 @@
       (value 22u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") GRT188R60J226ME13D)
+        (field (name Voltage) 6.3))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A1B4827))
@@ -120,12 +126,16 @@
     (comp (ref D4)
       (value LED)
       (footprint LEDs:LED_0603)
+      (fields
+        (field (name "MFG P/N") HT-191TW))
       (libsource (lib device) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AA49FFB))
     (comp (ref D3)
       (value LED)
       (footprint LEDs:LED_0603)
+      (fields
+        (field (name "MFG P/N") HT-191TW))
       (libsource (lib device) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AA4A06E))
@@ -174,6 +184,8 @@
     (comp (ref U1)
       (value TPS561201)
       (footprint TO_SOT_Packages_SMD:SOT-23-6_Handsoldering)
+      (fields
+        (field (name "MFG P/N") TPS561201DDCR))
       (libsource (lib turnout_controller-cache) (part TPS561201))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B306E6C))
@@ -201,7 +213,8 @@
       (value 10u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") GRT188R61C106ME13D)
+        (field (name Voltage) 16))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B314D35))
@@ -209,7 +222,8 @@
       (value 22u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name "MFG P/N") GRT188R60J226ME13D)
+        (field (name Voltage) 6.3))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B317374))
@@ -217,7 +231,8 @@
       (value 0.1u)
       (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
-        (field (name Voltage) Volt))
+        (field (name Voltage) "10 VDC")
+        (field (name "MFG P/N") VJ0603V104ZXQPW1BC))
       (libsource (lib turnout_controller-cache) (part CAP_NP))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B3180BB)))
@@ -363,12 +378,12 @@
         (pin (num 5) (name EN) (type input))
         (pin (num 6) (name VBST) (type input)))))
   (libraries
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical switches)
       (uri "/Library/Application Support/kicad/library/switches.lib"))
     (library (logical conn)
       (uri "/Library/Application Support/kicad/library/conn.lib"))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical turnout_controller-cache)
       (uri /Users/elhawaryk/projects/iteletram/turnout_hw/turnout_controller-cache.lib)))
   (nets

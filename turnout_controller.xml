@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\projects\iteletram\turnout_hw\trunk\turnout_controller.sch</source>
-    <date>2018-01-15 11:54:53 PM</date>
+    <source>/Users/elhawaryk/projects/iteletram/turnout_hw/turnout_controller.sch</source>
+    <date>Friday, August 17, 2018 'amt' 02:06:42 am</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -19,79 +19,20 @@
     </sheet>
   </design>
   <components>
-    <comp ref="R3">
-      <value>59K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FC63E1</tstamp>
-    </comp>
-    <comp ref="R6">
-      <value>40.2K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FC6472</tstamp>
-    </comp>
-    <comp ref="R5">
-      <value>7.68K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FC6535</tstamp>
-    </comp>
-    <comp ref="L1">
-      <value>4.7u</value>
-      <footprint>3012</footprint>
-      <fields>
-        <field name="MFG P/N">NRH3012T4R7MN</field>
-      </fields>
-      <libsource lib="device" part="L"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FC6C50</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>1u</value>
-      <footprint>c0603</footprint>
-      <fields>
-        <field name="Voltage">Volt</field>
-      </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FCC7E3</tstamp>
-    </comp>
     <comp ref="C4">
-      <value>22u</value>
-      <footprint>c0603</footprint>
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
       <fields>
-        <field name="Voltage">Volt</field>
+        <field name="MFG P/N">GRT188R61C106ME13D</field>
+        <field name="Voltage">16</field>
       </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FCCD0A</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>22u</value>
-      <footprint>c0603</footprint>
-      <fields>
-        <field name="Voltage">Volt</field>
-      </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59FCCFEE</tstamp>
     </comp>
-    <comp ref="C1">
-      <value>22u</value>
-      <footprint>c0603</footprint>
-      <fields>
-        <field name="Voltage">Volt</field>
-      </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FF7F2D</tstamp>
-    </comp>
-    <comp ref="D1">
+    <comp ref="D2">
       <value>CZ4GP208-HF</value>
+      <footprint>Z4GP208-HF:Z4GP208-HF-SMD</footprint>
       <fields>
         <field name="MFG P/N">Z4GP208-HF</field>
       </fields>
@@ -99,108 +40,83 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59FF9951</tstamp>
     </comp>
-    <comp ref="R1">
-      <value>100K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FFC2E5</tstamp>
-    </comp>
     <comp ref="C5">
       <value>1u</value>
-      <footprint>c0603</footprint>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
       <fields>
-        <field name="Voltage">Volt</field>
+        <field name="MFG P/N">885012106010</field>
+        <field name="Voltage">10</field>
       </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59FFDD6D</tstamp>
     </comp>
     <comp ref="C6">
       <value>0.1u</value>
-      <footprint>c0603</footprint>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
       <fields>
-        <field name="Voltage">Volt</field>
+        <field name="MFG P/N">VJ0603V104ZXQPW1BC</field>
+        <field name="Voltage">10</field>
       </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59FFDDB1</tstamp>
     </comp>
     <comp ref="U2">
       <value>MKE04P24M48SF0</value>
-      <footprint>TSSOP16</footprint>
+      <footprint>Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm</footprint>
       <fields>
         <field name="MFG P/N">MKE04P24M48SF0</field>
       </fields>
-      <libsource lib="turnout_controller-rescue" part="MKE04P24M48SF0-RESCUE-turnout_controller"/>
+      <libsource lib="turnout_controller-cache" part="MKE04P24M48SF0-RESCUE-turnout_controller"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A1255A7</tstamp>
     </comp>
-    <comp ref="J1">
-      <value>DCC Input</value>
-      <libsource lib="conn" part="Conn_01x02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A12567A</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>LED Connect</value>
-      <libsource lib="conn" part="Conn_01x02"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A1257C6</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>Servo Motor</value>
-      <libsource lib="conn" part="Conn_01x03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A125843</tstamp>
-    </comp>
-    <comp ref="U1">
-      <value>AP65111A</value>
-      <footprint>TSOT26</footprint>
+    <comp ref="R5">
+      <value>400</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
       <fields>
-        <field name="MFG P/N">AP65111A</field>
-      </fields>
-      <libsource lib="turnout_controller-cache" part="AP65111A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59FC6BF0</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>380</value>
-      <footprint>r0603</footprint>
-      <fields>
+        <field name="MFG P/N">PAT0603E4000BST1</field>
         <field name="MFG">Value</field>
         <field name="P/N">Value</field>
       </fields>
-      <libsource lib="teletram" part="RES"/>
+      <libsource lib="turnout_controller-cache" part="RES"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A1324E5</tstamp>
     </comp>
-    <comp ref="D2">
+    <comp ref="D1">
       <value>D_Schottky</value>
-      <footprint>1206</footprint>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
       <fields>
-        <field name="MFG P/N">SD1206S020S1R0</field>
+        <field name="MFG P/N">PMEG2010AEB,115</field>
       </fields>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A133850</tstamp>
     </comp>
-    <comp ref="R4">
+    <comp ref="R2">
       <value>4.7K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">CRCW06034K70JNEAC‎</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="RES"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A1338DD</tstamp>
     </comp>
-    <comp ref="R2">
+    <comp ref="R1">
       <value>10K</value>
-      <footprint>r0603</footprint>
-      <libsource lib="teletram" part="RES"/>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">CRCW060310K0JNEAC</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="RES"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A133968</tstamp>
     </comp>
     <comp ref="SW1">
       <value>SW_Push</value>
+      <footprint>tt_buttons:HTB1-Button</footprint>
       <fields>
         <field name="MFG P/N">TS-1289VE-4</field>
         <field name="Label">"UP"</field>
@@ -211,16 +127,18 @@
     </comp>
     <comp ref="C7">
       <value>22u</value>
-      <footprint>c0603</footprint>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
       <fields>
-        <field name="Voltage">Volt</field>
+        <field name="MFG P/N">GRT188R60J226ME13D</field>
+        <field name="Voltage">6.3</field>
       </fields>
-      <libsource lib="teletram" part="CAP_NP"/>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A1B4827</tstamp>
     </comp>
     <comp ref="SW2">
       <value>SW_Push</value>
+      <footprint>tt_buttons:HTB1-Button</footprint>
       <fields>
         <field name="MFG">ZJWin-Tech</field>
         <field name="P/N">TS-1289VE-4</field>
@@ -230,23 +148,158 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A1C72E9</tstamp>
     </comp>
+    <comp ref="J3">
+      <value>PROG</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x04_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A77F62D</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="MFG P/N">HT-191TW</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AA49FFB</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="MFG P/N">HT-191TW</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AA4A06E</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>MOT_CNTL</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB2F44B</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>MOT_POWER</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB2F4C5</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>MOT_GND</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB2F530</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>LED_1</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB2F944</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>LED_2</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB2FA1F</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>DCC_A</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB47DEA</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>DCC_B</value>
+      <footprint>half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge</footprint>
+      <libsource lib="conn" part="Conn_01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB4815D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TPS561201</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6_Handsoldering</footprint>
+      <fields>
+        <field name="MFG P/N">TPS561201DDCR</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="TPS561201"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B306E6C</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">CRCW060310K0JNEAC</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="RES"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B307DC3</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>54.9K</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">ERA-3AED5492V</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="RES"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B308482</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>4.7u</value>
+      <footprint>Inductors_SMD:L_Taiyo-Yuden_NR-30xx</footprint>
+      <fields>
+        <field name="MFG P/N">NRH3012T4R7MN</field>
+      </fields>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B3092F6</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">GRT188R61C106ME13D</field>
+        <field name="Voltage">16</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B314D35</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <fields>
+        <field name="MFG P/N">GRT188R60J226ME13D</field>
+        <field name="Voltage">6.3</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B317374</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">10 VDC</field>
+        <field name="MFG P/N">VJ0603V104ZXQPW1BC</field>
+      </fields>
+      <libsource lib="turnout_controller-cache" part="CAP_NP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B3180BB</tstamp>
+    </comp>
   </components>
   <libparts>
-    <libpart lib="turnout_controller-cache" part="AP65111A">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">AP65111A</field>
-      </fields>
-      <pins>
-        <pin num="1" name="IN" type="input"/>
-        <pin num="2" name="GND" type="input"/>
-        <pin num="3" name="SW" type="input"/>
-        <pin num="4" name="BST" type="input"/>
-        <pin num="5" name="EN" type="input"/>
-        <pin num="6" name="FB" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="teletram" part="CAP_NP">
+    <libpart lib="turnout_controller-cache" part="CAP_NP">
       <fields>
         <field name="Reference">C</field>
         <field name="Value">CAP_NP</field>
@@ -258,8 +311,8 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02</description>
+    <libpart lib="conn" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_??x*mm*</fp>
@@ -271,15 +324,14 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x02</field>
+        <field name="Value">Conn_01x01</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_01x03">
-      <description>Generic connector, single row, 01x03</description>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_??x*mm*</fp>
@@ -291,12 +343,13 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x03</field>
+        <field name="Value">Conn_01x04</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
         <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="D_Bridge_+AA-">
@@ -351,7 +404,21 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="turnout_controller-rescue" part="MKE04P24M48SF0-RESCUE-turnout_controller">
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="turnout_controller-cache" part="MKE04P24M48SF0-RESCUE-turnout_controller">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">MKE04P24M48SF0-RESCUE-turnout_controller</field>
@@ -360,7 +427,7 @@
         <pin num="1" name="PTA5" type="BiDi"/>
         <pin num="2" name="PTA4" type="BiDi"/>
         <pin num="3" name="VDD" type="power_in"/>
-        <pin num="4" name="VSS" type="output"/>
+        <pin num="4" name="VSS" type="power_in"/>
         <pin num="5" name="PTB7" type="BiDi"/>
         <pin num="6" name="PTB6" type="BiDi"/>
         <pin num="7" name="PTB5" type="BiDi"/>
@@ -375,7 +442,7 @@
         <pin num="16" name="PTA0" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="teletram" part="RES">
+    <libpart lib="turnout_controller-cache" part="RES">
       <fields>
         <field name="Reference">R</field>
         <field name="Value">RES</field>
@@ -397,148 +464,156 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="turnout_controller-cache" part="TPS561201">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS561201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="SW" type="input"/>
+        <pin num="3" name="VIN" type="input"/>
+        <pin num="4" name="VFB" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VBST" type="input"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="turnout_controller-rescue">
-      <uri>C:\projects\iteletram\turnout_hw\trunk\turnout_controller-rescue.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
-    </library>
     <library logical="switches">
-      <uri>C:\Program Files\KiCad\share\kicad\library\switches.lib</uri>
+      <uri>/Library/Application Support/kicad/library/switches.lib</uri>
     </library>
     <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
     </library>
     <library logical="turnout_controller-cache">
-      <uri>C:\projects\iteletram\turnout_hw\trunk\turnout_controller-cache.lib</uri>
-    </library>
-    <library logical="teletram">
-      <uri>C:\projects\iTeletram\libs\trunk\kicad\teletram.lib</uri>
+      <uri>/Users/elhawaryk/projects/iteletram/turnout_hw/turnout_controller-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C3-Pad1)">
-      <node ref="C3" pin="1"/>
-      <node ref="U1" pin="4"/>
+    <net code="1" name="/KEY_DN">
+      <node ref="U2" pin="15"/>
+      <node ref="SW2" pin="2"/>
     </net>
-    <net code="2" name="Net-(C3-Pad2)">
-      <node ref="C3" pin="2"/>
-      <node ref="L1" pin="1"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="3" name="Net-(R3-Pad1)">
-      <node ref="R3" pin="1"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="4" name="Net-(R3-Pad2)">
-      <node ref="R5" pin="1"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="5" name="Net-(D2-Pad1)">
+    <net code="2" name="12V">
       <node ref="D2" pin="1"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="6" name="Net-(U2-Pad8)">
-      <node ref="U2" pin="8"/>
-    </net>
-    <net code="7" name="Net-(U2-Pad14)">
-      <node ref="U2" pin="14"/>
-    </net>
-    <net code="8" name="Net-(U2-Pad13)">
-      <node ref="U2" pin="13"/>
-    </net>
-    <net code="9" name="Net-(U2-Pad2)">
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="10" name="Net-(U2-Pad1)">
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="11" name="Net-(R7-Pad1)">
-      <node ref="R7" pin="1"/>
-      <node ref="U2" pin="6"/>
-    </net>
-    <net code="12" name="Net-(J3-Pad2)">
-      <node ref="U2" pin="5"/>
-      <node ref="J3" pin="2"/>
-    </net>
-    <net code="13" name="Net-(J2-Pad1)">
-      <node ref="U2" pin="7"/>
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="14" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="15" name="GND">
-      <node ref="U1" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="J2" pin="3"/>
-      <node ref="C6" pin="1"/>
-      <node ref="U2" pin="4"/>
-      <node ref="R4" pin="2"/>
-      <node ref="SW2" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="D1" pin="4"/>
-      <node ref="C1" pin="1"/>
       <node ref="C4" pin="1"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="16" name="/DCC_A">
-      <node ref="D2" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="D1" pin="2"/>
-    </net>
-    <net code="17" name="/DCC_B">
-      <node ref="D1" pin="3"/>
-      <node ref="J1" pin="1"/>
-    </net>
-    <net code="18" name="/DCC_IN">
-      <node ref="U2" pin="12"/>
-      <node ref="R4" pin="1"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="19" name="12V">
-      <node ref="U1" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="5"/>
       <node ref="C1" pin="2"/>
     </net>
-    <net code="20" name="Net-(U2-Pad11)">
-      <node ref="U2" pin="11"/>
+    <net code="3" name="5V">
+      <node ref="C7" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J3" pin="4"/>
+      <node ref="R4" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C3" pin="2"/>
     </net>
-    <net code="21" name="Net-(U2-Pad9)">
-      <node ref="U2" pin="9"/>
+    <net code="4" name="GND">
+      <node ref="R3" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D2" pin="4"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C5" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C4" pin="2"/>
     </net>
-    <net code="22" name="Net-(R1-Pad2)">
-      <node ref="U1" pin="5"/>
-      <node ref="R1" pin="2"/>
+    <net code="5" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="6"/>
     </net>
-    <net code="23" name="/KEY_UP">
-      <node ref="SW1" pin="2"/>
+    <net code="6" name="Net-(C2-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="L1" pin="1"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="7" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="8" name="/SWD_CLK">
+      <node ref="J3" pin="3"/>
       <node ref="U2" pin="16"/>
     </net>
-    <net code="24" name="/KEY_DN">
-      <node ref="SW2" pin="2"/>
-      <node ref="U2" pin="15"/>
+    <net code="9" name="/DCC_IN">
+      <node ref="U2" pin="12"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="2"/>
     </net>
-    <net code="25" name="Net-(U2-Pad10)">
+    <net code="10" name="/KEY_UP">
+      <node ref="U2" pin="6"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="11" name="/SWD_IO">
+      <node ref="U2" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="12" name="/MOT_CNTL">
+      <node ref="J4" pin="1"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="15" name="Net-(R5-Pad1)">
+      <node ref="U2" pin="13"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="16" name="Net-(R3-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="17" name="/DCC_A">
+      <node ref="D1" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="18" name="/DCC_B">
+      <node ref="J2" pin="1"/>
+      <node ref="D2" pin="3"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="20" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad10)">
       <node ref="U2" pin="10"/>
     </net>
-    <net code="26" name="5V">
-      <node ref="U2" pin="3"/>
-      <node ref="C4" pin="2"/>
-      <node ref="L1" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="J2" pin="2"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C6" pin="2"/>
+    <net code="22" name="Net-(U2-Pad14)">
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="23" name="/LED1">
+      <node ref="D4" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="24" name="/LED2">
+      <node ref="D3" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="U2" pin="11"/>
+      <node ref="J8" pin="1"/>
     </net>
   </nets>
 </export>
