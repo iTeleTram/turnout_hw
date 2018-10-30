@@ -115,12 +115,12 @@ $EndComp
 $Comp
 L 5V #PWR02
 U 1 1 59FFF089
-P 9350 1250
-F 0 "#PWR02" H 9350 1350 40  0001 C CNN
-F 1 "5V" H 9350 1400 60  0000 C CNN
-F 2 "" H 9350 1250 60  0000 C CNN
-F 3 "" H 9350 1250 60  0000 C CNN
-	1    9350 1250
+P 9500 1850
+F 0 "#PWR02" H 9500 1950 40  0001 C CNN
+F 1 "5V" H 9500 2000 60  0000 C CNN
+F 2 "" H 9500 1850 60  0000 C CNN
+F 3 "" H 9500 1850 60  0000 C CNN
+	1    9500 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -138,14 +138,15 @@ $EndComp
 $Comp
 L RES R5
 U 1 1 5A1324E5
-P 8550 2050
-F 0 "R5" H 8650 2125 50  0000 R BNN
-F 1 "400" H 8850 2125 50  0000 L BNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 8650 2000 40  0001 L BNN
-F 3 "" H 8550 2050 60  0000 C CNN
-F 4 "Value" H 8550 2050 60  0001 C CNN "MFG"
-F 5 "Value" H 8550 2050 60  0001 C CNN "P/N"
-	1    8550 2050
+P 8250 1400
+F 0 "R5" H 8350 1475 50  0000 R BNN
+F 1 "400" H 8550 1475 50  0000 L BNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 8350 1350 40  0001 L BNN
+F 3 "" H 8250 1400 60  0000 C CNN
+F 4 "PAT0603E4000BST1" H 8250 1400 60  0001 C CNN "MFG P/N"
+F 5 "Value" H 8250 1400 60  0001 C CNN "MFG"
+F 6 "Value" H 8250 1400 60  0001 C CNN "P/N"
+	1    8250 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -198,12 +199,12 @@ $EndComp
 $Comp
 L GND_ #PWR04
 U 1 1 5A143353
-P 8050 2950
-F 0 "#PWR04" H 8150 3050 30  0001 C CNN
-F 1 "GND_" H 8050 2850 30  0001 C CNN
-F 2 "" H 8050 2950 60  0000 C CNN
-F 3 "" H 8050 2950 60  0000 C CNN
-	1    8050 2950
+P 8050 2900
+F 0 "#PWR04" H 8150 3000 30  0001 C CNN
+F 1 "GND_" H 8050 2800 30  0001 C CNN
+F 2 "" H 8050 2900 60  0000 C CNN
+F 3 "" H 8050 2900 60  0000 C CNN
+	1    8050 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -231,12 +232,12 @@ $EndComp
 $Comp
 L GND_ #PWR07
 U 1 1 5A1435B0
-P 9350 2350
-F 0 "#PWR07" H 9450 2450 30  0001 C CNN
-F 1 "GND_" H 9350 2250 30  0001 C CNN
-F 2 "" H 9350 2350 60  0000 C CNN
-F 3 "" H 9350 2350 60  0000 C CNN
-	1    9350 2350
+P 9500 2650
+F 0 "#PWR07" H 9600 2750 30  0001 C CNN
+F 1 "GND_" H 9500 2550 30  0001 C CNN
+F 2 "" H 9500 2650 60  0000 C CNN
+F 3 "" H 9500 2650 60  0000 C CNN
+	1    9500 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -290,14 +291,14 @@ DCC_IN
 $Comp
 L CAP_NP C7
 U 1 1 5A1B4827
-P 9350 1600
-F 0 "C7" H 9400 1550 50  0000 L BNN
-F 1 "22u" H 9400 1850 50  0000 L BNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9425 1500 40  0001 L BNN
-F 3 "" H 9350 1600 60  0000 C CNN
-F 4 "GRT188R60J226ME13D" H 9350 1600 60  0001 C CNN "MFG P/N"
-F 5 "6.3" H 9450 1550 40  0001 L BNN "Voltage"
-	1    9350 1600
+P 9500 2250
+F 0 "C7" H 9350 2300 50  0000 L BNN
+F 1 "22u" H 9350 2450 50  0000 L BNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9575 2150 40  0001 L BNN
+F 3 "" H 9500 2250 60  0000 C CNN
+F 4 "GRT188R60J226ME13D" H 9500 2250 60  0001 C CNN "MFG P/N"
+F 5 "6.3" H 9600 2200 40  0001 L BNN "Voltage"
+	1    9500 2250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -311,10 +312,9 @@ F 3 "" H 3450 1450 50  0001 C CNN
 	1    3450 1450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6750 2150
 NoConn ~ 7950 1750
 NoConn ~ 6750 1550
-Text Label 6200 2250 0    60   ~ 0
+Text Label 6200 2150 0    60   ~ 0
 KEY_UP
 Text Label 6200 1450 0    60   ~ 0
 KEY_DN
@@ -370,8 +370,7 @@ F 3 "" H 3450 2100 50  0001 C CNN
 $EndComp
 Text Label 6200 1350 0    60   ~ 0
 SWD_CLK
-NoConn ~ 6750 1750
-Text Label 6200 1650 0    60   ~ 0
+Text Label 6200 1750 0    60   ~ 0
 SWD_IO
 Text Label 7650 5400 0    60   ~ 0
 SWD_IO
@@ -436,9 +435,9 @@ F 4 "HT-191TW" H 7800 3800 60  0001 C CNN "MFG P/N"
 $EndComp
 Text Notes 7100 3600 0    60   ~ 0
 Optional On-Board LEDs
-Text Label 9050 2000 0    60   ~ 0
+Text Label 8900 1350 0    60   ~ 0
 LED1
-Text Label 9050 2100 0    60   ~ 0
+Text Label 8900 1450 0    60   ~ 0
 LED2
 Text Label 7100 4000 0    60   ~ 0
 LED1
@@ -451,56 +450,56 @@ Programming Header
 $Comp
 L Conn_01x01 J4
 U 1 1 5AB2F44B
-P 9800 1450
-F 0 "J4" H 9900 1500 50  0000 C CNN
-F 1 "MOT_CNTL" H 10150 1450 50  0000 C CNN
-F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1450 50  0001 C CNN
-F 3 "" H 9800 1450 50  0001 C CNN
-	1    9800 1450
+P 9900 2000
+F 0 "J4" H 10000 2050 50  0000 C CNN
+F 1 "MOT_CNTL" H 10250 2000 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9900 2000 50  0001 C CNN
+F 3 "" H 9900 2000 50  0001 C CNN
+	1    9900 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J5
 U 1 1 5AB2F4C5
-P 9800 1550
-F 0 "J5" H 9900 1600 50  0000 C CNN
-F 1 "MOT_POWER" H 10200 1550 50  0000 C CNN
-F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1550 50  0001 C CNN
-F 3 "" H 9800 1550 50  0001 C CNN
-	1    9800 1550
+P 9900 2100
+F 0 "J5" H 10000 2150 50  0000 C CNN
+F 1 "MOT_POWER" H 10300 2100 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9900 2100 50  0001 C CNN
+F 3 "" H 9900 2100 50  0001 C CNN
+	1    9900 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J6
 U 1 1 5AB2F530
-P 9800 1650
-F 0 "J6" H 9900 1700 50  0000 C CNN
-F 1 "MOT_GND" H 10150 1650 50  0000 C CNN
-F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 1650 50  0001 C CNN
-F 3 "" H 9800 1650 50  0001 C CNN
-	1    9800 1650
+P 9900 2200
+F 0 "J6" H 10000 2250 50  0000 C CNN
+F 1 "MOT_GND" H 10250 2200 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9900 2200 50  0001 C CNN
+F 3 "" H 9900 2200 50  0001 C CNN
+	1    9900 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J7
 U 1 1 5AB2F944
-P 9800 2000
-F 0 "J7" H 9800 2100 50  0000 C CNN
-F 1 "LED_1" H 10000 2000 50  0000 C CNN
-F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 2000 50  0001 C CNN
-F 3 "" H 9800 2000 50  0001 C CNN
-	1    9800 2000
+P 9500 1350
+F 0 "J7" H 9500 1450 50  0000 C CNN
+F 1 "LED_1" H 9700 1350 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9500 1350 50  0001 C CNN
+F 3 "" H 9500 1350 50  0001 C CNN
+	1    9500 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J8
 U 1 1 5AB2FA1F
-P 9800 2100
-F 0 "J8" H 9800 2000 50  0000 C CNN
-F 1 "LED_2" H 10000 2100 50  0000 C CNN
-F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9800 2100 50  0001 C CNN
-F 3 "" H 9800 2100 50  0001 C CNN
-	1    9800 2100
+P 9500 1450
+F 0 "J8" H 9500 1350 50  0000 C CNN
+F 1 "LED_2" H 9700 1450 50  0000 C CNN
+F 2 "half-connectors:Socket_Strip_Straight_1x01_Pitch1.27mm_at_edge" H 9500 1450 50  0001 C CNN
+F 3 "" H 9500 1450 50  0001 C CNN
+	1    9500 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -692,8 +691,6 @@ $EndComp
 Wire Wire Line
 	7950 2400 8050 2400
 Wire Wire Line
-	8950 2000 9600 2000
-Wire Wire Line
 	3850 1350 3850 1800
 Connection ~ 3850 1650
 Wire Wire Line
@@ -720,20 +717,11 @@ Wire Wire Line
 	2200 3150 2200 3250
 Connection ~ 2200 3150
 Wire Wire Line
-	8050 2400 8050 2900
+	8050 2400 8050 2850
 Wire Wire Line
 	8350 2700 8350 2850
 Wire Wire Line
 	8700 2700 8700 2850
-Wire Wire Line
-	9350 1850 9350 2300
-Wire Wire Line
-	9500 1650 9600 1650
-Wire Wire Line
-	9350 1900 9500 1900
-Wire Wire Line
-	9500 1900 9500 1650
-Connection ~ 9350 1900
 Wire Wire Line
 	6200 1450 6750 1450
 Wire Wire Line
@@ -763,11 +751,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 2200 3850 2200
 Connection ~ 3850 2200
-Wire Wire Line
-	9350 1250 9350 1600
-Wire Wire Line
-	9600 1550 9350 1550
-Connection ~ 9350 1550
 Wire Wire Line
 	7450 5300 7950 5300
 Wire Wire Line
@@ -847,26 +830,8 @@ Wire Wire Line
 	2250 5000 2200 5000
 Wire Wire Line
 	6200 1350 6750 1350
-Wire Wire Line
-	6750 2050 6200 2050
-Wire Wire Line
-	6750 2250 6200 2250
-Wire Wire Line
-	7950 1350 8250 1350
-Wire Wire Line
-	6750 1650 6200 1650
-Text Label 8600 1450 0    60   ~ 0
+Text Label 8900 2000 0    60   ~ 0
 MOT_CNTL
-Wire Wire Line
-	7950 1450 9600 1450
-NoConn ~ 7950 1550
-NoConn ~ 7950 1650
-Wire Wire Line
-	7950 2000 8550 2000
-Wire Wire Line
-	8250 1350 8250 2100
-Wire Wire Line
-	8250 2100 9600 2100
 Wire Wire Line
 	7950 2300 8700 2300
 Wire Wire Line
@@ -875,4 +840,38 @@ Connection ~ 8350 2300
 Wire Wire Line
 	8700 2250 8700 2450
 Connection ~ 8700 2300
+Wire Wire Line
+	7950 1450 9300 1450
+NoConn ~ 6750 1850
+Wire Wire Line
+	6750 2050 6200 2050
+Wire Wire Line
+	6750 2150 6200 2150
+Wire Wire Line
+	6200 1750 6750 1750
+NoConn ~ 6750 1650
+Wire Wire Line
+	7950 1350 8250 1350
+Wire Wire Line
+	8650 1350 9300 1350
+NoConn ~ 7950 1650
+NoConn ~ 7950 1850
+Wire Wire Line
+	7950 1550 8250 1550
+Wire Wire Line
+	8250 1550 8250 2000
+Wire Wire Line
+	9700 2100 9500 2100
+Wire Wire Line
+	9500 1850 9500 2250
+Wire Wire Line
+	9700 2200 9700 2550
+Connection ~ 9500 2100
+Wire Wire Line
+	9500 2500 9500 2600
+Wire Wire Line
+	9700 2550 9500 2550
+Connection ~ 9500 2550
+Wire Wire Line
+	8250 2000 9700 2000
 $EndSCHEMATC
